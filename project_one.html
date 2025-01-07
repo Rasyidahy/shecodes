@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nasi lemak: Malaysian favourite</title>
+    <style>
+      h1 {
+        color: #1a64d6;
+        text-align: center;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        border: 2px solid #272044;
+      }
+
+      h2 {
+        color: #272044;
+        text-align: center;
+        margin: 0;
+        font-size: 34px;
+        line-height: 48px;
+        font-weight: 400;
+        font-family: Helvetica, Arial, sans-serif;
+        border-radius: 4px;
+        
+      }
+
+      h3 {
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      button {
+        border: 1px solid #1a64d6;
+        border-radius: 20px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+        margin: 20px auto;
+        display: block;
+        color: #fff;
+        font-size: 16px;
+        background: #1a64d6;
+        padding: 15px 20px;
+        transition: all 200ms ease;
+        cursor: pointer;
+      }
+
+      button:hover {
+        color: #1a64d6;
+        background: #fff;
+      }
+
+      
+
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .info-heading {
+        font-weight: bold;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 18px;
+        opacity: 0.7;
+        font-family: monospace;
+        margin: 0 auto;
+        
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>🌤 <br />Nasi Lemak</h1>
+    <h2>Nasi lemak: Malaysian favourite</h2>
+    <hr>
+    <image src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg/800px-Nasi_Lemak_dengan_Chili_Nasi_Lemak_dan_Sotong_Pedas%2C_di_Penang_Summer_Restaurant.jpg" width="300"/src></image>
+    <hr>
+    <p>
+      <strong>Nasi lemak</strong> is a dish originating in Malay cuisine that consists of
+      fragrant rice cooked in coconut milk and pandan leaf. It is commonly found
+      in Malaysia, where it is considered as the national dish. It is also a
+      native dish in neighbouring areas with significant ethnic Malay
+      populations such as Singapore and Southern Thailand. In Indonesia it can
+      be found in several parts of Sumatra, especially the Malay regions of
+      Riau, Riau Islands and Medan. It is considered an essential dish for a
+      typical Malay-style breakfast. Nasi lemak is featured as a national dish
+      in most of the country's tourism brochures and promotional materials.
+    </p>
+    <br>
+    <small><a href="https://www.tasteatlas.com/nasi-lemak" target="_blank">READ HERE MORE..</a></small>
+     <br>
+    <button>Try Nasi Lemak</button>
+    </div>
+    <script>
+      function nasiLemak() {
+        let nama = prompt("What is your name?");
+
+        let eat = prompt("level spicy 1 or 2? ");
+        let heading = document.querySelector("h1");
+        if (eat > 1) {
+          heading.innerHTML = "Hi " + nama + ",  You can eat nasi lemak 😄";
+        } else {
+          heading.innerHTML = "Sorry " + nama + ",  You cannot eat nasi lemak ☹️";
+        }
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", nasiLemak);
+    </script>
+    <p>Coded by Rasyidah</p>
+  </body>
+</html>
